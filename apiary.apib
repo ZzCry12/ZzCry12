@@ -3,7 +3,7 @@ HOST: https://polls.apiblueprint.org/
 
 # proyecto1
 
-Polls is a simple API allowing consumers to view polls and vote in them.
+PROYECTO DE API CON BMW
 
 ## Questions Collection [/muchosbmw]
 
@@ -292,49 +292,3 @@ Polls is a simple API allowing consumers to view polls and vote in them.
                 "img_url": "http://ts2.mm.bing.net/th?id=OIP.M8cbb2251062f0f8b4a6b3f8a391af193o0&pid=15.1"
               }
         ]
-
-### Create a New Question [POST]
-
-You may create your own question using this action. It takes a JSON
-object containing a question and a collection of answers in the
-form of choices.
-
-+ Request (application/json)
-
-        {
-            "question": "Favourite programming language?",
-            "choices": [
-                "Swift",
-                "Python",
-                "Objective-C",
-                "Ruby"
-            ]
-        }
-
-+ Response 201 (application/json)
-
-    + Headers
-
-            Location: /questions/2
-
-    + Body
-
-            {
-                "question": "Favourite programming language?",
-                "published_at": "2015-08-05T08:40:51.620Z",
-                "choices": [
-                    {
-                        "choice": "Swift",
-                        "votes": 0
-                    }, {
-                        "choice": "Python",
-                        "votes": 0
-                    }, {
-                        "choice": "Objective-C",
-                        "votes": 0
-                    }, {
-                        "choice": "Ruby",
-                        "votes": 0
-                    }
-                ]
-            }
