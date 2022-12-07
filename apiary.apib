@@ -10,17 +10,22 @@ PROYECTO DE API CON BMW
 ### muchosBMW [GET]
 
 + Response 200 (application/json)
+    
+      
 
-        [
-            {
-                "year": 2016,
+        
+        {
+            "results":
+            
+            [ {   "year": 2016,
                 "id": 34,
                 "horsepower": 240,
                 "make": "bmw",
                 "model": "2-series",
                 "price": 38650,
                 "img_url": "https://carsguide-res.cloudinary.com/image/upload/f_auto,fl_lossy,q_auto,t_cg_hero_large/v1/editorial/BMW-M240i-white-2016-coupe-%281%29.jpg"
-              },
+            }
+            ,
               {
                 "year": 2016,
                 "id": 35,
@@ -192,4 +197,4 @@ PROYECTO DE API CON BMW
                 "price": 117200,
                 "img_url": "https://ag-spots-2016.o.auroraobjects.eu/2016/03/26/bmw-m6-f06-gran-coupe-2015-c614926032016054905_1.jpg"
               }
-        ]
+        ]}
